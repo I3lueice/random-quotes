@@ -13,9 +13,13 @@ let myFuncArrow2 = () => { return { a: 5 }}
 console.log(myFuncArrow2())
 
 
-function myHigherOrderFunction() {
 
+function myHigherOrderFunction(paramenterFunction) {
+    return paramenterFunction()
 }
 
-console.log(myFunction())
-console.log(myFunc())
+console.log(myHigherOrderFunction(myFuncArrow2))
+
+
+// console.log(myFunction())
+// console.log(myFunc())
