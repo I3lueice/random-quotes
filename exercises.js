@@ -66,7 +66,7 @@ function everyLoop(array, test)
  {
    // Your code here.
    let returnValue = true
-   for(let item of array){
+   for(let item of array) {
        returnValue = returnValue && test(item)
 
    }
