@@ -65,6 +65,11 @@ as a function that takes an array and a predicate function as parameters. Write 
 function everyLoop(array, test) 
  {
    // Your code here.
+   let returnValue = true
+   for(let item of array){
+       returnValue = returnValue && test(item)
+
+   }
  }
  
  function everySome(array, test) 
