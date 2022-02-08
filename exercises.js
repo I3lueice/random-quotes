@@ -10,6 +10,8 @@ let myFuncArrow = () => 1
 
 let myFuncArrow2 = () => { let a = 1; return 1 }
 
+
+
 function myHigherOrderFunction() {
 
 }
