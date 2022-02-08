@@ -33,6 +33,6 @@ function repeat(n, action) {
   let arrays = [[1,2,3], [4,5], [6]];
 
 function flattening(inputList) {
-    return inputList
+    return inputList.reduce((aE1, aE2) => aE1.concat(aE2))
 }
 console.log(flattening(arrays))
