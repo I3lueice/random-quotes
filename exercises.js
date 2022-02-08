@@ -18,8 +18,5 @@ function myHigherOrderFunction(paramenterFunction) {
     return paramenterFunction()
 }
 
-console.log(myHigherOrderFunction(myFuncArrow2))
+console.log(myHigherOrderFunction(() => { return { a: 5 }} ))
 
-
-// console.log(myFunction())
-// console.log(myFunc())
