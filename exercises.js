@@ -72,10 +72,9 @@ function everyLoop(array, test)
    return returnValue
  }
  
- function everySome(array, test) 
- {
+ function everySome(array, test) {
  // Your code here.
-    array.some(test)
+    return !array.some(item => !test(item))
  } 
  
  console.log(everyLoop([1, 3, 5], n => n < 10));
