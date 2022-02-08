@@ -9,4 +9,4 @@ let myFunc = function () {
 let myFunc2 = myFunc
 
 console.log(myFunction())
-console.log(myFunc())
+console.log(myFunc2())
