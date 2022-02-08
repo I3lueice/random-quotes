@@ -20,3 +20,10 @@ function myHigherOrderFunction(paramenterFunction) {
 
 console.log(myHigherOrderFunction(() => { return { a: 5 }} ))
 
+function repeat(n, action) {
+    for (let i = 0; i < n; i++) {
+      action(i);
+    }
+  }
+  
+  repeat(3, console.log);
