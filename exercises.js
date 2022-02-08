@@ -68,8 +68,8 @@ function everyLoop(array, test)
    let returnValue = true
    for(let item of array) {
        returnValue = returnValue && test(item)
-
    }
+   return returnValue
  }
  
  function everySome(array, test) 
