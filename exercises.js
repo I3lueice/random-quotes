@@ -9,7 +9,7 @@ let myFunc = function () {
 let myFuncArrow = a => a + 1
 console.log(myFuncArrow(50))
 
-let myFuncArrow2 = () => { return { a: 5 } }
+let myFuncArrow2 = () => { return { a: 5 }}
 console.log(myFuncArrow2())
 
 
