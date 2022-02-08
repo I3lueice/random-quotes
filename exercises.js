@@ -43,9 +43,10 @@ Then it calls the body function, giving it the current value. Finally, it calls 
 
  (Links to an external site.)When defining the function, you can use a regular loop to do the actual looping. */
 
-function loop(value, test, body, update) {
-    while(test(value)){
-        update(value)
+function loop(value, test, update, body) {
+    while(test(value)) {
+        body(value)
+        value = update(value)
     }
 }
 
